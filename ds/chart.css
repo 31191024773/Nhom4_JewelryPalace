@@ -1,0 +1,15 @@
+.container {
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    width: 70%;
+    height: 800px;
+}
+
+.manage {
+    margin-top: 5px;
+}
+
+.manage:hover a {
+    text-decoration: none;
+}

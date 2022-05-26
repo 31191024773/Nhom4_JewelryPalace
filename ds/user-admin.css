@@ -1,0 +1,250 @@
+.main-table {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    width: 100%;
+    height: 100%;
+    background: url(../ds/img/p1.jpg);
+    overflow: hidden;
+}
+
+.table {
+    margin-top: 3%;
+    border: 3px solid black;
+    border-radius: 5px;
+    opacity: 0;
+    animation: traiqua 1s forwards;
+    animation-delay: 1s;
+}
+
+@keyframes traiqua {
+    0% {
+        margin-left: -50%;
+        opacity: 0;
+    }
+    100% {
+        margin-left: 3%;
+        opacity: 1;
+    }
+}
+
+.table tr td,
+.table tr th {
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 20px 28px;
+    border: 3px solid black;
+}
+
+.table tr th {
+    font-size: 28px;
+    color: #088178;
+}
+
+.table tr td {
+    color: white;
+}
+
+.edit-icon {
+    color: rgb(60, 60, 242);
+}
+
+.edit-icon i {
+    margin-right: 10%;
+}
+
+.edit-icon:hover {
+    transition: 0.2s;
+    font-size: 28px;
+    color: rgb(27, 27, 241);
+}
+
+.delete-icon {
+    color: rgb(240, 84, 84);
+}
+
+.delete-icon:hover {
+    transition: 0.2s;
+    font-size: 28px;
+    color: rgb(250, 30, 30);
+}
+
+.add-new {
+    margin-top: 1%;
+    opacity: 0;
+    animation: congtraiqua 1s forwards;
+    animation-delay: 2s;
+}
+
+@keyframes congtraiqua {
+    0% {
+        margin-left: -50%;
+        opacity: 0;
+    }
+    100% {
+        margin-left: 68%;
+        opacity: 1;
+    }
+}
+
+.add-new button {
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: rgb(52, 52, 248);
+    color: white;
+}
+
+.add-new:hover button {
+    background: rgb(2, 2, 183);
+    transition: 0.2s;
+}
+
+.add-new button i {
+    font-size: 14px;
+}
+
+.anhmay {
+    position: absolute;
+    bottom: -10%;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    animation: duoilen 1s forwards;
+    opacity: 0;
+}
+
+@keyframes duoilen {
+    0% {
+        bottom: -10%;
+        opacity: 0;
+    }
+    100% {
+        bottom: 10%;
+        opacity: 1;
+    }
+}
+
+.profile {
+    position: absolute;
+    top: 20%;
+    z-index: 1;
+    left: 25%;
+    width: 50%;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.3);
+    transition: 0.4s;
+}
+
+.add-user {
+    position: absolute;
+    top: 20%;
+    z-index: 2;
+    left: 25%;
+    width: 50%;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.3);
+    transition: 0.4s;
+}
+
+.info {
+    border: 2px solid black;
+    border-radius: 10px;
+    background: #E3E6F3;
+    padding: 50px;
+    transform: translateX(100px);
+}
+
+.title {
+    color: rgb(90, 90, 237);
+    font-size: 28px;
+    width: 80%;
+    text-align: center;
+    font-weight: bolder;
+    margin-left: 10%;
+}
+
+input[type=text],
+input[type=password],
+input[type=email] {
+    width: 100%;
+    padding: 8px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid rgb(123, 123, 241);
+}
+
+.submit {
+    padding: 10px 20px;
+    margin-top: 3%;
+    background: rgb(118, 118, 240);
+    color: white;
+    border-radius: 10px;
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.close {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background: rgb(118, 118, 240);
+    color: white;
+    border-radius: 10px;
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 56%;
+}
+
+.close-user {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background: rgb(118, 118, 240);
+    color: white;
+    border-radius: 10px;
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 61%;
+}
+
+.submit:hover {
+    background: rgb(68, 68, 240);
+    transition: 0.3s;
+}
+
+.lopmo {
+    width: 100%;
+    height: 100%;
+    background: rgba(12, 12, 12, 0.5);
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    /* nếu chỉ có opacity thì nó vẫn còn nhưng độ mờ bằng 0 */
+    opacity: 0;
+    transition: 0.6;
+}
+
+.noidunghienra {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+.lopmohienra {
+    opacity: 1;
+    visibility: visible;
+}

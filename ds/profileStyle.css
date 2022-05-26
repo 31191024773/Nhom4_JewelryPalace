@@ -1,0 +1,72 @@
+.profile {
+    display: flex;
+    position: absolute;
+    top: 20%;
+    right: 20%;
+}
+
+.avt {
+    margin-top: 90px;
+}
+
+.avt img {
+    border-radius: 50%;
+    width: 60%;
+    transform: translateX(200px);
+}
+
+.info {
+    border: 2px solid black;
+    border-radius: 10px;
+    background: #E3E6F3;
+    padding: 30px;
+    transform: translateX(100px);
+}
+
+.title {
+    color: rgb(90, 90, 237);
+    font-size: 28px;
+    width: 500px;
+    text-align: center;
+    font-weight: bolder;
+    transform: translateY(-20px);
+}
+
+input[type=text],
+input[type=password],
+input[type=email] {
+    width: 100%;
+    padding: 8px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid rgb(123, 123, 241);
+}
+
+.password-change p {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.submit {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background: rgb(118, 118, 240);
+    color: white;
+    border-radius: 10px;
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background: rgb(68, 68, 240);
+    transition: 0.3s;
+}
